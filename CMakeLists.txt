@@ -8,6 +8,9 @@
 project(muster)
 cmake_minimum_required(VERSION 2.8)
 
+# Set CUDA
+enable_language(CUDA)
+
 # Version information comes from here.  Incrememnt these when new stuff happens.
 set(MUSTER_MAJOR_VERSION 1)
 set(MUSTER_MINOR_VERSION 0)

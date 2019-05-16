@@ -30,6 +30,8 @@ add_test(write-members-test write_members_test.cpp)
 add_test(bic-test bic_test.cpp)
 add_test(reuse-test reuse_test.cpp)
 add_test(random-test random_test.cpp)
+add_test(clara-test clara_cluster_test.cpp)
+add_test(thrustTest thrustTest.cu)
 
 add_mpi_test(par-cluster-test par_cluster_test.cpp)
 add_mpi_test(par-cluster-speed-test par_cluster_speed_test.cpp)
