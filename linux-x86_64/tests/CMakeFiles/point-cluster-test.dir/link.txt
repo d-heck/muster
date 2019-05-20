@@ -1,0 +1,1 @@
+/usr/bin/c++   -pg   CMakeFiles/point-cluster-test.dir/point_cluster_test.cpp.o  -o point-cluster-test  -L/usr/local/cuda-10.0/lib64 libtest-support.a ../src/libmuster.so /usr/lib/openmpi/lib/libmpi_cxx.so /usr/lib/openmpi/lib/libmpi.so -lrt -Wl,-rpath,/usr/local/cuda-10.0/lib64:/usa/dheck/muster/muster/linux-x86_64/src:/usr/lib/openmpi/lib 

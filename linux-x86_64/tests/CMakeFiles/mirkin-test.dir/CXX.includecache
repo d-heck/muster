@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/partition.h
+cstddef
+-
+vector
+-
+set
+-
+ostream
+-
+stdint.h
+-
+
+/usa/dheck/muster/muster/tests/mirkin_test.cpp
+algorithm
+-
+iterator
+-
+iostream
+-
+set
+-
+cstdlib
+-
+sstream
+-
+partition.h
+/usa/dheck/muster/muster/tests/partition.h
+

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/partition.h
+cstddef
+-
+vector
+-
+set
+-
+ostream
+-
+stdint.h
+-
+
+/usa/dheck/muster/muster/tests/write_members_test.cpp
+iostream
+-
+iterator
+-
+sstream
+-
+algorithm
+-
+string.h
+-
+partition.h
+/usa/dheck/muster/muster/tests/partition.h
+

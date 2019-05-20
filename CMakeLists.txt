@@ -6,10 +6,17 @@
 # This is the top-level CMake build file for Muster.
 ###############################################################
 project(muster)
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.5.1)
 
-# Set CUDA
-enable_language(CUDA)
+# CUDA
+find_package(CUDA REQUIRED)
+include_directories(/usr/local/cuda-10.0/bin/include)
+link_directories(/usr/local/cuda-10.0/lib64)
+set(CUDA_SEPARABLE_COMPILATION ON)
+set(CMAKE_CUDA_COMPILER /usr/local/cuda-10.0/bin/nvcc)
+
+# Thrust
+#find_package(Thrust REQUIRED)
 
 # Version information comes from here.  Incrememnt these when new stuff happens.
 set(MUSTER_MAJOR_VERSION 1)
@@ -29,6 +36,9 @@ option(INSTALL_TESTS "Do you want to build the test programs?" FALSE)
 
 # Muster requires boost for matrices and random number generators.
 find_package(Boost REQUIRED)
+set (BOOST_ROOT "~/muster/boost_1_69_0/boost")
+set (BOOST_INCLUDEDIR "Boost_INCLUDE_DIR=~/muster/boost_1_69_0/boost/include")
+set (BOOST_LIBRARYDIR "Boost_INCLUDE_DIR=~/muster/boost_1_69_0/boost/lib")
 
 # Find the MPI library and set some definitions
 find_package(MPI)

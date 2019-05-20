@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtest-support.a  CMakeFiles/test-support.dir/point.cpp.o CMakeFiles/test-support.dir/point_set.cpp.o
+/usr/bin/ranlib libtest-support.a
